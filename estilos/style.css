@@ -1,12 +1,4 @@
-/* 
-  Variáveis para cores:
-  --fundo-principal
-  --texto
-  --texto-inverso
-  --destaque
-  --destaque-inverso
-  --fundo-card
-*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 *{
   padding: 0px;
@@ -21,6 +13,7 @@
   --destaque:#000000;
   --destaque-inverso:#66bbff;
   --fundo-card:#ffffff;
+  --texto-footer: "Roboto", sans-serif;
 }
 
 body.escuro{
@@ -253,6 +246,18 @@ footer a{
 
 footer a:hover{
   color: var(--destaque-inverso);
+} 
+
+footer.proposta{
+  width: 100%;
+  padding: 30px;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: #F5F5F5;
+  color: black;
+  font-family: var(--texto-footer);
+  font-size: 14px;
 }
 
 @media screen and (min-width:768px){
@@ -292,6 +297,16 @@ footer a:hover{
     max-width: 20%;
     max-height: 200px;
    }
+
+   footer.proposta{
+    font-size: 18px;
+    line-height: 1.5em;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 50px;
+   }
+
+   
 
 
 }
